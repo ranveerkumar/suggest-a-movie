@@ -64,9 +64,28 @@ class SuggestMovieIntentHandler(AbstractRequestHandler):
         actor = slots['actor'].value
         director = slots['director'].value
         print(language, genre, actor, director)
+
+        url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyaJ5WwRSRxoqN7Ho0eAKMm52gTHpBoo6NVFszDYCXstkiMHj4hdYzo06rz_MthpyWkvPsMojxgAkf/pub?gid=552199058&single=true&output=csv"
+        # csv_content = requests.get(url).content
+        # df = pd.read_csv(io.StringIO(csv_content.decode('utf-8')))
+        # print(df.head())
+
+        # movie_name = ''
+        # month_as_index = list(calendar.month_abbr).index(month[:3].title()) 
+        # usr_dob = (month_as_index,int(day))
+        # for index, row in df.iterrows():
+        #     if self.filter(row['Start']) <= usr_dob <= self.filter(row['End']):
+        #         zodiac = row['Zodiac']
+
+        movie_name = ""
+        with open(url, 'r') as file:
+            reader = csv.reader(file)
+            for row in reader:        
+                if (actor.lower() == row[1].lower() and language.lower() == row[0].lower() and genre.lower() == row[2].lower() and director.lower() == row[3].lower()):
+                    movie_name=row[4]
         
         # speak_output = 'I see you were born on the {day} of {month} {year}, which means that your zodiac sign will be {zodiac}.'.format(month=month, day=day, year=year, zodiac=zodiac)
-        speak_output = 'I got your interest'
+        speak_output = 'Perfect choice. Here\'s my movie recommendation for you: ' + movie_name
 
         return (
             handler_input.response_builder
