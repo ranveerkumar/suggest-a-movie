@@ -1,0 +1,70 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d08a6774-5e9c-41bf-8048-3687c44d6ea4": {
+        "id": "d08a6774-5e9c-41bf-8048-3687c44d6ea4",
+        "parent": null,
+        "name": "suggest-a-movie.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "suggest-a-movie.py",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "suggestAMovie"
+        },
+        "triggers": []
+      }
+    },
+    "openFiles": [
+      "d08a6774-5e9c-41bf-8048-3687c44d6ea4"
+    ],
+    "currentFileId": "d08a6774-5e9c-41bf-8048-3687c44d6ea4",
+    "resources": {},
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
+    "projectName": "suggest-a-movie",
+    "projectDescription": "Suggest a Movie",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "suggest-a-movie",
+      "url": "https://github.com/ranveerkumar/suggest-a-movie"
+    }
+  }
+}
