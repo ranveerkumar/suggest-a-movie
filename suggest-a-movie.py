@@ -78,12 +78,12 @@ class SuggestMovieIntentHandler(AbstractRequestHandler):
         #         zodiac = row['Zodiac']
 
         movie_name = ""
+        
         with open(url, 'r') as file:
             reader = csv.reader(file)
             for row in reader:        
                 if (actor.lower() == row[1].lower() and language.lower() == row[0].lower() and genre.lower() == row[2].lower() and director.lower() == row[3].lower()):
                     movie_name=row[4]
-        
         # speak_output = 'I see you were born on the {day} of {month} {year}, which means that your zodiac sign will be {zodiac}.'.format(month=month, day=day, year=year, zodiac=zodiac)
         speak_output = 'Perfect choice. Here\'s my movie recommendation for you: ' + movie_name
 

@@ -11,11 +11,11 @@
         "isRemovable": true,
         "filePath": "suggest-a-movie.py",
         "cursor": {
-          "lineNumber": 88,
-          "column": 96
+          "lineNumber": 82,
+          "column": 13
         },
         "config": {
-          "runtime": "python3.6",
+          "runtime": "python3.7",
           "handler": "handle",
           "timeout": 60,
           "memory": 128,

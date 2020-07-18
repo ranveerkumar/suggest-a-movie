@@ -39,7 +39,7 @@
         "MemorySize": 128,
         "Handler": "suggest-a-movie.handle",
         "Timeout": 60,
-        "Runtime": "python3.6",
+        "Runtime": "python3.7",
         "Layers": [],
         "TracingConfig": {
           "Mode": "PassThrough"
