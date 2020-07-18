@@ -37,9 +37,9 @@
           }
         },
         "MemorySize": 128,
-        "Handler": "suggest-a-movie.handler",
+        "Handler": "suggest-a-movie.handle",
         "Timeout": 60,
-        "Runtime": "python3.8",
+        "Runtime": "python3.6",
         "Layers": [],
         "TracingConfig": {
           "Mode": "PassThrough"
@@ -81,6 +81,17 @@
             }
           ]
         }
+      }
+    },
+    "alexaSK8deb4ed7c539suggestAMoviePermission": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Ref": "suggestAMovie"
+        },
+        "Principal": "alexa-appkit.amazon.com",
+        "EventSourceToken": "amzn1.ask.skill.8deb4ed7-c539-4100-88ad-316c9d92064f"
       }
     }
   }

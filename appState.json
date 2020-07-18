@@ -11,25 +11,60 @@
         "isRemovable": true,
         "filePath": "suggest-a-movie.py",
         "cursor": {
-          "lineNumber": 4,
-          "column": 1
+          "lineNumber": 65,
+          "column": 9
         },
         "config": {
-          "runtime": "python3.8",
-          "handler": "handler",
+          "runtime": "python3.6",
+          "handler": "handle",
           "timeout": 60,
           "memory": 128,
           "layers": [],
           "name": "suggestAMovie"
         },
-        "triggers": []
+        "triggers": [
+          {
+            "resourceName": "alexaSK8deb4ed7c539410088ad316c9d92064f",
+            "config": {}
+          }
+        ]
       }
     },
     "openFiles": [
       "d08a6774-5e9c-41bf-8048-3687c44d6ea4"
     ],
     "currentFileId": "d08a6774-5e9c-41bf-8048-3687c44d6ea4",
-    "resources": {},
+    "resources": {
+      "alexaSK8deb4ed7c539410088ad316c9d92064f": {
+        "name": "alexaSK8deb4ed7c539410088ad316c9d92064f",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.8deb4ed7-c539-4100-88ad-316c9d92064f",
+          "applicationID": ""
+        }
+      },
+      "ddbtmdbMovies": {
+        "name": "ddbtmdbMovies",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:303418569808:table/tmdb-movies",
+            "name": "tmdb-movies",
+            "partitionKey": "budget",
+            "partitionKeyType": "N",
+            "hasSortKey": true,
+            "sortKey": "id",
+            "sortKeyType": "N",
+            "payPerRequest": true,
+            "mode": 1,
+            "streamArn": "arn:aws:dynamodb:us-east-1:303418569808:table/tmdb-movies/stream/2020-07-18T05:35:05.411"
+          }
+        }
+      }
+    },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
@@ -47,7 +82,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -58,7 +101,8 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "language": "python",
-    "platformRegions": {}
+    "platformRegions": {},
+    "lastSave": 1595046228976
   },
   "VCS_STATE": {
     "provider": "GitHub",
