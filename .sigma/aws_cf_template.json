@@ -80,7 +80,24 @@
               }
             }
           ]
-        }
+        },
+        "Policies": [
+          {
+            "PolicyName": "suggestAMoviePolicy",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "dynamodb:GetItem"
+                  ],
+                  "Resource": "arn:aws:dynamodb:us-east-1:303418569808:table/tmdb-movies"
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     "alexaSK8deb4ed7c539suggestAMoviePermission": {

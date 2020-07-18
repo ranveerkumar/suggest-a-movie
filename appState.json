@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "suggest-a-movie.py",
         "cursor": {
-          "lineNumber": 65,
-          "column": 9
+          "lineNumber": 86,
+          "column": 62
         },
         "config": {
           "runtime": "python3.6",

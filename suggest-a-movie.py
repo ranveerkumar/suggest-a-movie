@@ -1,3 +1,5 @@
+import boto3
+ddb = boto3.client("dynamodb")
 # -*- coding: utf-8 -*-
 
 # This sample demonstrates handling intents from an Alexa skill using the Alexa Skills Kit SDK for Python.
@@ -62,7 +64,24 @@ class SuggestMovieIntentHandler(AbstractRequestHandler):
         actor = slots['actor'].value
         director = slots['director'].value
         print(language, genre, actor, director)
+
+        try:
+            movies_db = ddb.get_item(
+                TableName="tmdb-movies",
+                Key={
+                    'budget': {
+                        'N': "budget"
+                    },
+                    'id': {
+                        'N': "id"
+                    }
+                }
+            )
+        except BaseException as e:
+            print(e)
+            raise(e)
         
+        movies_db.head()
         
         # speak_output = 'I see you were born on the {day} of {month} {year}, which means that your zodiac sign will be {zodiac}.'.format(month=month, day=day, year=year, zodiac=zodiac)
         speak_output = 'I got your interest'
