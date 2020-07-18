@@ -33,8 +33,8 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Hello! Welcome to Zodiac Signs. When were you born?"
-        reprompt = "I was born Nov. 6th 2014? When were you born?"
+        speak_output = "Hello! Welcome to The Movie Library! What movie you wanna watch today?"
+        reprompt = "I like watching English Thriller starring Tom Cruise and directed by Brian De Palma. What kind of movies we want."
 
         return (
             handler_input.response_builder
@@ -64,24 +64,6 @@ class SuggestMovieIntentHandler(AbstractRequestHandler):
         actor = slots['actor'].value
         director = slots['director'].value
         print(language, genre, actor, director)
-
-        try:
-            movies_db = ddb.get_item(
-                TableName="tmdb-movies",
-                Key={
-                    'budget': {
-                        'N': "budget"
-                    },
-                    'id': {
-                        'N': "id"
-                    }
-                }
-            )
-        except BaseException as e:
-            print(e)
-            raise(e)
-        
-        movies_db.head()
         
         # speak_output = 'I see you were born on the {day} of {month} {year}, which means that your zodiac sign will be {zodiac}.'.format(month=month, day=day, year=year, zodiac=zodiac)
         speak_output = 'I got your interest'

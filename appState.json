@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "suggest-a-movie.py",
         "cursor": {
-          "lineNumber": 86,
-          "column": 62
+          "lineNumber": 69,
+          "column": 21
         },
         "config": {
           "runtime": "python3.6",
@@ -27,7 +27,16 @@
             "resourceName": "alexaSK8deb4ed7c539410088ad316c9d92064f",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "39aa9949-c518-4dc5-978d-ff940dbe6abb": {
+            "id": "39aa9949-c518-4dc5-978d-ff940dbe6abb",
+            "name": "happy flow",
+            "functionId": "d08a6774-5e9c-41bf-8048-3687c44d6ea4",
+            "event": "{\n\t\"version\": \"1.0\",\n\t\"session\": {\n\t\t\"new\": false,\n\t\t\"sessionId\": \"amzn1.echo-api.session.c9bd3c46-cb91-4b92-92c8-0ead52000aa9\",\n\t\t\"application\": {\n\t\t\t\"applicationId\": \"amzn1.ask.skill.8deb4ed7-c539-4100-88ad-316c9d92064f\"\n\t\t},\n\t\t\"user\": {\n\t\t\t\"userId\": \"amzn1.ask.account.AFJVBQVXMNCH5GJ2474EM4NI3UJBBWCJZ3BQZMXXQTAK2C7Q25YF7GTHZVWTLROMTV3IMZGB3G27KNR3PUCHUPJNZFERVBWT3S5JW5JRIMWZ7JCI2GQJJGFWDG62IRT4FDZHHYD6SDHUF7T7UG5P3O46OK4K2SILYRYDVPGJJHMP4PIOBPWG56ZPM762TTSBBQQNC63DHVXUVHY\"\n\t\t}\n\t},\n\t\"context\": {\n\t\t\"System\": {\n\t\t\t\"application\": {\n\t\t\t\t\"applicationId\": \"amzn1.ask.skill.8deb4ed7-c539-4100-88ad-316c9d92064f\"\n\t\t\t},\n\t\t\t\"user\": {\n\t\t\t\t\"userId\": \"amzn1.ask.account.AFJVBQVXMNCH5GJ2474EM4NI3UJBBWCJZ3BQZMXXQTAK2C7Q25YF7GTHZVWTLROMTV3IMZGB3G27KNR3PUCHUPJNZFERVBWT3S5JW5JRIMWZ7JCI2GQJJGFWDG62IRT4FDZHHYD6SDHUF7T7UG5P3O46OK4K2SILYRYDVPGJJHMP4PIOBPWG56ZPM762TTSBBQQNC63DHVXUVHY\"\n\t\t\t},\n\t\t\t\"device\": {\n\t\t\t\t\"deviceId\": \"amzn1.ask.device.AGSC3VQHEQ4IJ2NZ6IFYOJJIJBW44NGWVKB2W6FYKSUKDKRD6MLFCPXXTP5N33PU6UKUWKWMGSJ4H5DASRCPZS3F3PPIARB3FQ7HQHJ2P6AJNKP6VPWY4R3KK3ZAHDE3W2ONOOADMUNYSZMO2F533BA3IITNWUIOCBII3S5CFQTS2S547E22O\",\n\t\t\t\t\"supportedInterfaces\": {}\n\t\t\t},\n\t\t\t\"apiEndpoint\": \"https://api.eu.amazonalexa.com\",\n\t\t\t\"apiAccessToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjhkZWI0ZWQ3LWM1MzktNDEwMC04OGFkLTMxNmM5ZDkyMDY0ZiIsImV4cCI6MTU5NTA1NTMxNCwiaWF0IjoxNTk1MDU1MDE0LCJuYmYiOjE1OTUwNTUwMTQsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFBT0dpUmdIUnB3NXFTUDlmWjYwc1N4S3dFQUFBQUFBQUIyYnRiZzFJNE55cE9tMzVPSllzYldIWERwVUhpK0U5VzdPWkF5b29jSk1nRlp0b3RTOTd2cCtsOTdzQTF0MzBTazlYSlBha29zZXp6WHE3aWxKUmp0VXZ3RTlOR1h3WXRrY0didEdZYjVYWFcyOFZjMEJtUno2VXNLMTZDSkQ5OFhFOUM3eHhZZTcwa2hQYks3eFAxa3l3RS9sL2ltd1JrTWh4VkU4clZhQ1o1QnJXRzJQMHo5OCs2dGQwVmNvY2VkaUdiMVJ5cjFBMVR6SVJxRDcwUjRjSUlVWXZWalBYQ3Z4TURIQ3FCRkEzT2owSmhaaytDY0JJQlZsWWV4anVXZFA1cWVGVmJhamg1WDhDYWJrSzh1WUsvVUE3WnhCZFJIb2d4S0RlQ2xSSTJHejhMMzVNTWFyclFJNy8wZHR2dm5RKzhHTXVoOG1xcG01V0dZd2FVREZ1QldtMHh0ZW1rOU03K2VOc1YxNGZLcDVubGRoSEhEeVFYMFlwQmFXd0dGenYreWtMeHI1SHZzRmc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHU0MzVlFIRVE0SUoyTlo2SUZZT0pKSUpCVzQ0TkdXVktCMlc2RllLU1VLREtSRDZNTEZDUFhYVFA1TjMzUFU2VUtVV0tXTUdTSjRINURBU1JDUFpTM0YzUFBJQVJCM0ZRN0hRSEoyUDZBSk5LUDZWUFdZNFIzS0szWkFIREUzVzJPTk9PQURNVU5ZU1pNTzJGNTMzQkEzSUlUTldVSU9DQklJM1M1Q0ZRVFMyUzU0N0UyMk8iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRkpWQlFWWE1OQ0g1R0oyNDc0RU00TkkzVUpCQldDSlozQlFaTVhYUVRBSzJDN1EyNVlGN0dUSFpWV1RMUk9NVFYzSU1aR0IzRzI3S05SM1BVQ0hVUEpOWkZFUlZCV1QzUzVKVzVKUklNV1o3SkNJMkdRSkpHRldERzYySVJUNEZEWkhIWUQ2U0RIVUY3VDdVRzVQM080Nk9LNEsyU0lMWVJZRFZQR0pKSE1QNFBJT0JQV0c1NlpQTTc2MlRUU0JCUVFOQzYzREhWWFVWSFkifX0.N7VUcyNPuihYqV81E28gS3wSFt5LRIFyzoob-6WpnlN_MXYY012rg9dUI8R42rkgi7uQjuuGLKkn0YihM4niKu0FpD3pPp7DxMy4AnU7btQzyyQT1JvLxvor_s8dZHO0CPCLBE4nVJYNUSJ7PlJL25NaAjNpKYwIlHJ7YaP7CY3X5-Bcmo-tLJCRIcaPDa2cuz53SrkFCFp1_osBTCYMDjf9_t4HnaUSPtGENkfLBosP7pwrdN6uDXKU2QBhhof_pJigYF1DuIaKRfiz5jZoxI4t471eE2PCVzxh3mbUA45GJUd3lWrCFkYkbpKAr2z34ByxVYciDfBM7uunLjoKdQ\"\n\t\t},\n\t\t\"Viewport\": {\n\t\t\t\"experiences\": [\n\t\t\t\t{\n\t\t\t\t\t\"arcMinuteWidth\": 246,\n\t\t\t\t\t\"arcMinuteHeight\": 144,\n\t\t\t\t\t\"canRotate\": false,\n\t\t\t\t\t\"canResize\": false\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"shape\": \"RECTANGLE\",\n\t\t\t\"pixelWidth\": 1024,\n\t\t\t\"pixelHeight\": 600,\n\t\t\t\"dpi\": 160,\n\t\t\t\"currentPixelWidth\": 1024,\n\t\t\t\"currentPixelHeight\": 600,\n\t\t\t\"touch\": [\n\t\t\t\t\"SINGLE\"\n\t\t\t],\n\t\t\t\"video\": {\n\t\t\t\t\"codecs\": [\n\t\t\t\t\t\"H_264_42\",\n\t\t\t\t\t\"H_264_41\"\n\t\t\t\t]\n\t\t\t}\n\t\t},\n\t\t\"Viewports\": [\n\t\t\t{\n\t\t\t\t\"type\": \"APL\",\n\t\t\t\t\"id\": \"main\",\n\t\t\t\t\"shape\": \"RECTANGLE\",\n\t\t\t\t\"dpi\": 160,\n\t\t\t\t\"presentationType\": \"STANDARD\",\n\t\t\t\t\"canRotate\": false,\n\t\t\t\t\"configuration\": {\n\t\t\t\t\t\"current\": {\n\t\t\t\t\t\t\"video\": {\n\t\t\t\t\t\t\t\"codecs\": [\n\t\t\t\t\t\t\t\t\"H_264_42\",\n\t\t\t\t\t\t\t\t\"H_264_41\"\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"size\": {\n\t\t\t\t\t\t\t\"type\": \"DISCRETE\",\n\t\t\t\t\t\t\t\"pixelWidth\": 1024,\n\t\t\t\t\t\t\t\"pixelHeight\": 600\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t},\n\t\"request\": {\n\t\t\"type\": \"IntentRequest\",\n\t\t\"requestId\": \"amzn1.echo-api.request.436f56a7-1c3e-46c4-9f6d-f08a71c5c1e6\",\n\t\t\"locale\": \"en-US\",\n\t\t\"timestamp\": \"2020-07-18T06:50:14Z\",\n\t\t\"intent\": {\n\t\t\t\"name\": \"SuggestMovieIntent\",\n\t\t\t\"confirmationStatus\": \"NONE\",\n\t\t\t\"slots\": {\n\t\t\t\t\"actor\": {\n\t\t\t\t\t\"name\": \"actor\",\n\t\t\t\t\t\"value\": \"Tom cruise\",\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\n\t\t\t\t\t\"source\": \"USER\"\n\t\t\t\t},\n\t\t\t\t\"genre\": {\n\t\t\t\t\t\"name\": \"genre\",\n\t\t\t\t\t\"value\": \"action\",\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\n\t\t\t\t\t\"source\": \"USER\"\n\t\t\t\t},\n\t\t\t\t\"language\": {\n\t\t\t\t\t\"name\": \"language\",\n\t\t\t\t\t\"value\": \"English\",\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\n\t\t\t\t\t\"source\": \"USER\"\n\t\t\t\t},\n\t\t\t\t\"director\": {\n\t\t\t\t\t\"name\": \"director\",\n\t\t\t\t\t\"value\": \"Brian de Palma\",\n\t\t\t\t\t\"confirmationStatus\": \"NONE\",\n\t\t\t\t\t\"source\": \"USER\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t\"dialogState\": \"COMPLETED\"\n\t}\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
@@ -68,7 +77,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -89,6 +98,24 @@
           "version": "1.12.27",
           "dev": true,
           "notRemovable": false
+        },
+        "ask-sdk-core": {
+          "name": "ask-sdk-core",
+          "version": "1.11.0",
+          "dev": false,
+          "language": "python"
+        },
+        "pandas": {
+          "name": "pandas",
+          "version": "1.0.5",
+          "dev": false,
+          "language": "python"
+        },
+        "numpy": {
+          "name": "numpy",
+          "version": "1.19.0",
+          "dev": false,
+          "language": "python"
         }
       }
     }
